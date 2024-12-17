@@ -105,7 +105,8 @@ Ensure you have the following installed before running the project:
 
    Parameters such as color thresholds and pixel-to-distance ratio can be adjusted within the notebook for better performance.
 
-3. **Results**
+
+## Results
 
 Here is how the output looks like:
 
@@ -115,7 +116,7 @@ Below are the trajectories of each ball in the video.
 
 
 | Red Ball | Green Ball | Blue Ball |
-|-------------- |-------------- | |-------------- |
+|-------------- |-------------- | --------------|
 | ![Trajectory of Red ball](Results/Trajectory_Red.png) | ![Trajectory of Green ball](Results/Trajectory_Green.png) | ![Trajectory of Blue ball](Results/Trajectory_Blue.png) |
 
 
@@ -133,30 +134,6 @@ Below are the trajectories of each ball in the video.
    - Speed is calculated using the distance traveled between consecutive positions, considering the video frame rate and pixel-to-distance calibration.
 5. **Visualization**: The balls, their speed and trajectories are overlaid on original video and saved..
 
----
-
-## Example Results
-
-Sample output:
-
-- **Tracked Video**: Displaying the ball's path and speed annotations.
-- **Speed Output**: Logged in the console or saved as a CSV file.
-
----
-
-## Contributing
-
-Contributions are welcome! If you'd like to improve or extend the functionality of this project, feel free to:
-
-1. Fork the repository.
-2. Create a feature branch.
-3. Commit your changes.
-4. Submit a pull request.
-
-For major changes, please open an issue first to discuss what you would like to improve.
-
----
-
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
@@ -169,5 +146,3 @@ Special thanks to the contributors and the OpenCV community for providing tools 
 
 ---
 
-**Author**: Tayyab Wahab  
-**GitHub**: [tayyabwahab](https://github.com/tayyabwahab)
