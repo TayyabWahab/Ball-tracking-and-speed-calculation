@@ -1,9 +1,3 @@
-# Ball_Tracking_Speed_Calculation
-This respositary contains code for the detection, tracking and speed calculation of multiple balls along with trajectories.
-
-# Ball_Tracking_Speed_Calculation
-This respositary contains code for the detection, tracking and speed calculation of multiple balls along with trajectories.
-
 # Ball Tracking and Speed Calculation
 
 This repository provides an implementation for **ball tracking** and **speed calculation** using computer vision techniques. It is ideal for detecting and analyzing the movement of a ball in a video feed.
@@ -40,21 +34,15 @@ The project aims to detect a ball in a video or live camera feed, track its posi
 
 ---
 
-## Dependencies
+## Required Dependencies
 
-Ensure you have the following libraries installed before running the project:
+Ensure you have the following installed before running the project:
 
-- Python >= 3.8
+- Python
+- Jupyter Notebook
 - OpenCV
 - NumPy
-- imutils
-- Matplotlib (optional, for visualization)
-
-Install the dependencies using:
-
-```bash
-pip install opencv-python numpy imutils matplotlib
-```
+- Matplotlib (optional)
 
 ---
 
@@ -73,8 +61,17 @@ pip install opencv-python numpy imutils matplotlib
    ```bash
    cd Ball_Tracking_Speed_Calculation
    ```
+3. **Setting up Virtual Environment**
 
-3. **Install Dependencies**
+   It is recommended to use a virtual environment to avoid conflicts with other projects.
+
+   ```bash
+   pip install virtualenv    # Install virtualenv to create virtual environments1
+   virtualenv VEnv           # Create Virtual Environment
+   source VEnv/bin/activate  # Activate Virtual Environment (On Windows use `VEnv\Scripts\activate)`
+   ```
+
+4. **Install Dependencies**
 
    Use the provided command to install all required libraries:
 
@@ -82,32 +79,46 @@ pip install opencv-python numpy imutils matplotlib
    pip install -r requirements.txt
    ```
 
+5. **Install Jupyter Notebook**
+
+   Ensure Jupyter Notebook is installed to run the code:
+
+   ```bash
+   pip install notebook
+   ```
 ---
 
 ## Usage
 
-1. **Run the Script**
+1. **Run the Jupyter Notebook**
 
-   To run the ball tracking script, use:
+   Open the Jupyter notebook and execute the cells sequentially:
 
    ```bash
-   python ball_tracking.py --video path/to/video.mp4
+   jupyter notebook
    ```
 
-   - Replace `path/to/video.mp4` with the path to your input video.
-   - To use a live webcam feed, use:
-     ```bash
-     python ball_tracking.py
-     ```
+   - Open the notebook file named `Balls_tracking_speed_trajectory.ipynb`.
+   - Adjust file paths, path to video input and output.
 
 2. **Adjust Parameters**
 
-   Parameters such as color thresholds and pixel-to-distance ratio can be adjusted within the script for better performance.
+   Parameters such as color thresholds and pixel-to-distance ratio can be adjusted within the notebook for better performance.
 
-3. **View the Results**
+3. **Results**
 
-   - The video output will display the tracked ball, its trajectory, and calculated speed.
-   - Optionally, the speed data can be logged for further analysis.
+Here is how the output looks like:
+
+![Sample Output](Results/SampleOutput.jpg)
+
+Below are the trajectories of each ball in the video. 
+
+
+| Red Ball | Green Ball | Blue Ball |
+|-------------- |-------------- | |-------------- |
+| ![Trajectory of Red ball](Results/Trajectory_Red.png) | ![Trajectory of Green ball](Results/Trajectory_Green.png) | ![Trajectory of Blue ball](Results/Trajectory_Blue.png) |
+
+
 
 ---
 
@@ -120,11 +131,7 @@ pip install opencv-python numpy imutils matplotlib
 3. **Position Tracking**: The ball's position is tracked across consecutive frames.
 4. **Speed Calculation**:
    - Speed is calculated using the distance traveled between consecutive positions, considering the video frame rate and pixel-to-distance calibration.
-   - Formula:
-     \[
-     \text{Speed} = \frac{\text{Distance in pixels} \times \text{Conversion Factor}}{\text{Time per Frame}}
-     \]
-5. **Visualization**: The ball, its path, and speed are overlaid on the video for easy analysis.
+5. **Visualization**: The balls, their speed and trajectories are overlaid on original video and saved..
 
 ---
 
