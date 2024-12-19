@@ -134,15 +134,5 @@ Below are the trajectories of each ball in the video.
    - Speed is calculated using the distance traveled between consecutive positions, considering the video frame rate and pixel-to-distance calibration.
 5. **Visualization**: The balls, their speed and trajectories are overlaid on original video and saved..
 
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
----
-
-## Acknowledgments
-
-Special thanks to the contributors and the OpenCV community for providing tools and resources for computer vision projects.
-
 ---
 
